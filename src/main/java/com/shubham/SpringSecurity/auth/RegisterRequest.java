@@ -1,6 +1,9 @@
 package com.shubham.SpringSecurity.auth;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
@@ -9,7 +12,7 @@ import lombok.*;
 public class RegisterRequest {
 
     private String firstname;
-    private  String lastname;
+    private String lastname;
     private String email;
-    private String passowrd;
+    private String password;
 }
