@@ -17,6 +17,8 @@ public class SecurityConfiguration {
 
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final AuthenticationProvider authenticationProvider;
+
+    // this bean has all required configuration for http security. Spring looks for this bean upon startup
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
